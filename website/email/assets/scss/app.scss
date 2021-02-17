@@ -1,0 +1,142 @@
+@import 'settings';
+@import 'foundation-emails';
+
+body,
+html,
+.body {
+  background: #ffffff !important;
+}
+
+/// Table of Contents:
+//
+//   1. Media quaries
+//   2. Hero block
+//   3. Heading additional styles
+//   4. Footer
+//   5. Callout block
+//   6. Block with contacts
+//   7. Button
+//   8. Changelog tag
+
+// 1. Media quaries
+// ----------------
+
+// Small only
+@media only screen and (max-width: #{$global-breakpoint}) {
+  // Removes right padding for the image in the Feedback block
+  th.small-3.large-3.columns.first {
+    padding-right: 0 !important;
+  }
+  h1 {
+    font-size: 22px !important;
+    line-height: 1.15;
+  }
+  h2 {
+    font-size: 20px !important;
+    line-height: 1.15;
+  }
+  h3 {
+    font-size: 16px !important;
+    line-height: 1.25;
+  }
+}
+
+// 2. Hero block
+// ---------
+
+.header {
+  background: $dark-purple;
+  border-radius: 10px;
+}
+.header p {
+  color: $white;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+// 3. Heading additional styles
+// ---------
+
+h1 {
+  color: $white;
+  font-size: 32px;
+  line-height: 1.4;
+  font-weight: bold;
+  text-align: center;
+}
+h2 {
+  font-size: 26px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+h3 {
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+
+// 4. Footer
+// ---------
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  line-height: 1.35;
+  color: $secondary-color;
+}
+
+// 5. Callout block
+// ---------
+
+.callout {
+  background: $pale-gray;
+  // padding: 24px 32px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+// 6. Block with contacts
+// ---------
+
+.feedback {
+  background: $dark-purple;
+  border-radius: 10px;
+}
+.feedback h2,
+.feedback p,
+.feedback a {
+  color: $white;
+}
+
+// 7. Button
+// ---------
+
+.button {
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+// 8. Changelog
+// ---------
+
+.tag {
+  display: inline-block;
+  padding: 4px 10px;
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 12px;
+  line-height: 1.2;
+
+  color: $white;
+  background-color: $added-color; // from variables for Tag
+  border-radius: 6px;
+}
+
+// Reduces paddings between tag and description in the Changelog block
+th.small-9.large-10.columns.last {
+  padding-left: 8px !important;
+}
+th.small-3.large-2.columns.first {
+  padding-right: 0 !important;
+}

@@ -1,0 +1,99 @@
+/// Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Tag
+
+// 1. Global
+// ---------
+
+$primary-color: #0082e5;
+$black: #171a22;
+$secondary-color: #575c66;
+$medium-gray: #898d9a;
+$light-gray: #d1d4db;
+$pale-gray: #f6f7f8;
+$white: #ffffff;
+$success-color: #00bc98;
+$warning-color: #ffae00;
+$alert-color: #f71939;
+$brand-color: #ff622d;
+$dark-purple: #421983;
+$global-width: 600px;
+$global-width-small: 95%;
+$global-gutter: 32px;
+$body-background: $white;
+$container-background: $white;
+$global-padding: 16px;
+$global-margin: 40px;
+$global-radius: 10px;
+$button-radius: 6px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+// 2. Grid
+// -------
+
+$grid-column-count: 12;
+$column-padding-bottom: 0;
+
+// 3. Block Grid
+// -------------
+
+$block-grid-max: 8;
+$block-grid-gutter: $global-gutter;
+
+// 4. Typography
+// -------------
+
+$global-font-color: $black;
+$body-font-family: Helvetica, Arial, sans-serif;
+$global-font-weight: normal;
+$header-color: inherit;
+$global-line-height: 1.5;
+$global-font-size: 16px;
+$body-line-height: $global-line-height;
+$header-font-family: $body-font-family;
+$header-font-weight: $global-font-weight;
+$header-margin-bottom: 8px;
+$paragraph-margin-bottom: 0px;
+$text-padding: 0px;
+$hr-width: $global-width;
+$hr-border: 1px solid $light-gray;
+$hr-margin: 20px;
+$anchor-text-decoration: underline;
+$anchor-color: $primary-color;
+$anchor-color-visited: $anchor-color;
+$anchor-color-hover: darken($primary-color, 10%);
+$anchor-color-active: $anchor-color-hover;
+$stat-font-size: 40px;
+
+// 5. Button
+// ---------
+
+$button-padding: (
+  default: 8px 24px 8px 24px,
+  large: 13px 64px,
+);
+$button-font-size: (
+  default: 16px,
+  large: 16px,
+);
+$button-color: $white;
+$button-color-alt: $medium-gray;
+$button-font-weight: normal;
+$button-margin: 0 0 $global-margin 0;
+$button-background: $brand-color;
+$button-border: 2px solid $button-background;
+$button-radius: $button-radius;
+
+// // 6. Tag
+// // ------
+
+$added-color: #00bc98;
+$fixed-color: #0082e5;
+$changed-color: #ff9400;
+$break-color: #f71939;

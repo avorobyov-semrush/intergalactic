@@ -1,0 +1,50 @@
+---
+subject: New Intergalactic Release
+releaseVersion: 2.4.0
+releaseDate: 18 December
+---
+
+<container>
+  <spacer size="40"></spacer>
+
+  <row class="header">
+    <columns>
+      <spacer size="46"></spacer>
+      <center><img src="assets/img/logo-intergalactic.png" alt="logo" /></center>
+      <spacer size="36"></spacer>
+      <center>
+        <h1>
+          New {{releaseVersion}} release
+          <br />
+          from {{releaseDate}} is here!
+        </h1>
+      </center>
+      <center>
+        <p small="12" large="12">
+          Dear friend, we have a new release for Intergalactic
+          <br />
+          components with the following improvements and changes.
+        </p>
+      </center>
+      <row>
+        <columns small="12" large="6">
+          <center>
+            <button
+              href="https://i.semrush.com/internal/release/release-changelog/"
+              target="_blank"
+              class="large radius"
+            >
+              Dive into changelog
+            </button>
+          </center>
+        </columns>
+      </row>
+    </columns>
+  </row>
+
+  <spacer size="40"></spacer>
+
+  {{>component-changes componentName = "Date-picker" changelogTag = "Added" changelogDesc = "Short
+  description for changes we made in component for this release." }} {{>cta}} {{>callout}}
+  {{>feedback}} {{>footer}}
+</container>
